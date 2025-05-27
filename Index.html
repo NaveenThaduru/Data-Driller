@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Driller - Data Analysis Services for SMEs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset & Body Styling */
+        body {
+            font-family: 'Lato', sans-serif; /* Using Lato for body */
+            margin: 0;
+            padding: 0;
+            background-color: #f2f5f7; /* Light gray base background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #1a2c42; /* Very dark blue */
+            color: #ffffff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-family: 'Roboto', sans-serif; /* Using Roboto for headings */
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 0.5rem;
+        }
+
+        /* Container for Content */
+        .container {
+            max-width: 1000px; /* Slightly wider container */
+            margin: 2rem auto;
+            padding: 0; /* Remove internal padding as sections have it */
+            background-color: transparent; /* Transparent container background */
+            border-radius: 0;
+            box-shadow: none; /* No shadow on the container itself */
+        }
+
+        /* Section Styling */
+        section {
+            padding: 2.5rem 1.5rem; /* More vertical padding and horizontal padding */
+            border-bottom: 1px solid #e0e0e0; /* Subtle border between sections */
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        /* Alternating Section Backgrounds */
+        #introduction, #value-proposition, footer {
+            background-color: #ffffff;
+        }
+
+        #services, #contact {
+            background-color: #f8f8f8; /* Light gray background */
+        }
+
+        section h2 {
+            color: #1a2c42; /* Darker heading color */
+            text-align: left; /* Align headings to the left */
+            margin-bottom: 2rem;
+            font-size: 2.2em;
+            border-bottom: 3px solid #3498db; /* Stronger blue underline */
+            display: inline-block; /* Make underline only as wide as text */
+            padding-bottom: 0.3rem;
+        }
+
+        section p {
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        /* Services List Styling */
+        .services-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .services-list li {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            text-align: left; /* Align text left within cards */
+            flex: 1 1 calc(33% - 3rem);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+            min-width: 280px;
+            border: 1px solid #e0e0e0; /* Border for cards */
+        }
+
+        .services-list li strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1a2c42;
+            font-size: 1.15em;
+        }
+
+        /* Contact Section Styling */
+        .contact-info {
+            text-align: center;
+            padding-top: 1rem; /* Add some space */
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: #1a2c42;
+            color: #ffffff;
+            font-size: 0.9em;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .container {
+                margin: 1rem auto;
+            }
+
+            section {
+                padding: 1.8rem 1rem; /* Adjust padding for smaller screens */
+            }
+
+            section h2 {
+                font-size: 2em;
+                text-align: center; /* Center headings on smaller screens */
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .services-list li {
+                flex: 1 1 calc(50% - 3rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-list li {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data Driller</h1>
+        <p>Expert Data Analysis Services for Small & Medium Enterprises</p>
+    </header>
+
+    <div class="container">
+        <section id="introduction">
+            <h2>Welcome to Your Data Analysis Solution</h2>
+            <p>Are you a Small or Medium Enterprise struggling to make sense of your business data? Do you wish you could leverage your existing information to improve efficiency, reduce costs, and make smarter decisions?</p>
+            <p>With a strong background in **Asset & Inventory Management and Maintenance**, I specialize in transforming raw data into actionable insights, specifically tailored to the needs of SMEs. My goal is to help you bridge the gap between data collection and strategic business growth.</p>
+        </section>
+
+        <section id="services">
+            <h2>My Core Services</h2>
+            <p>I offer a range of data analysis services designed to empower your business. Here are some key areas where I can assist:</p>
+            <ul class="services-list">
+                <li>
+                    <strong>Inventory Optimization:</strong>
+                    <p>Analyze inventory levels, turnover, and demand patterns to reduce holding costs and prevent stockouts.</p>
+                </li>
+                <li>
+                    <strong>Asset Performance Analysis:</strong>
+                    <p>Evaluate asset utilization, downtime, and maintenance history to improve operational efficiency and prolong asset life.</p>
+                </li>
+                <li>
+                    <strong>Maintenance Strategy Development:</strong>
+                    <p>Develop data-driven preventive and predictive maintenance strategies to minimize breakdowns and optimize maintenance schedules.</p>
+                </li>
+                <li>
+                    <strong>Cost Reduction Analysis:</strong>
+                    <p>Identify areas of unnecessary expenditure within your operations through detailed financial and operational data analysis.</p>
+                </li>
+                <li>
+                    <strong>Operational Efficiency Improvement:</strong>
+                    <p>Streamline workflows and identify bottlenecks by analyzing process data, leading to improved productivity.</p>
+                </li>
+                <li>
+                    <strong>Custom Reporting & Dashboarding:</strong>
+                    <p>Create clear, concise, and customizable reports and interactive dashboards to track key performance indicators (KPIs).</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="value-proposition">
+            <h2>Why Choose My Services?</h2>
+            <p>Many SMEs face challenges in effectively utilizing their data due to limited resources or specialized expertise. I provide that expertise without the overhead of a full-time hire.</p>
+            <p>My services are designed to be:</p>
+            <ul>
+                <li>Tailored: Solutions are customized to your specific business needs and industry.</li>
+                <li>Actionable: I focus on providing insights that you can immediately implement for tangible results.</li>
+                <li>Cost-Effective: Get expert data analysis without the long-term commitment of in-house data scientists.</li>
+                <li>Experienced: Leverage my deep understanding of Asset & Inventory Management to solve your unique challenges.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Let's Discuss Your Data Needs</h2>
+            <p>Ready to unlock the power of your business data? I'm here to help.</p>
+            <div class="contact-info">
+                <p>Feel free to reach out for a free consultation.</p>
+                <p>Email: <a href="mailto:naveen.thaduru@gmail.com">naveen.thaduru@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919666954851">+91 9666954851</a></p>
+                <p>Connect on LinkedIn: <a href="https://www.linkedin.com/in/naveen-thaduru" target="_blank">linkedin.com/in/naveen-thaduru</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Data Driller. All rights reserved.</p>
+    </footer>
+</body>
+</html>
